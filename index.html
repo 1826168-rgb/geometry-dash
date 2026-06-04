@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Dash</title>
+    <meta name="description" content="Math Tutor Pro - Educational Game for Students">
+    <meta name="keywords" content="education, tutorial, math, learning, skills">
+    <title>Math Tutor Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="game-header">
-            <h1>Geometry Dash</h1>
+            <h1>Math Tutor Pro</h1>
+            <p class="subtitle">Educational Learning Game</p>
             <div class="stats">
-                <span>Score: <span id="score">0</span></span>
+                <span>Progress: <span id="score">0</span></span>
                 <span>Level: <span id="level">1</span></span>
             </div>
         </div>
@@ -19,15 +22,16 @@
         <canvas id="gameCanvas" width="800" height="400"></canvas>
         
         <div class="controls">
-            <p>Press <strong>SPACE</strong> or <strong>CLICK</strong> to jump</p>
-            <button id="startBtn" class="btn">Start Game</button>
-            <button id="restartBtn" class="btn" style="display:none;">Restart</button>
+            <p>Press <strong>SPACE</strong> or <strong>CLICK</strong> to continue with the tutorial</p>
+            <button id="startBtn" class="btn">Start Tutorial</button>
+            <button id="restartBtn" class="btn" style="display:none;">Continue</button>
         </div>
         
         <div id="gameOver" class="game-over" style="display:none;">
-            <h2>Game Over!</h2>
-            <p>Final Score: <span id="finalScore">0</span></p>
-            <button id="restartBtn2" class="btn">Play Again</button>
+            <h2>Tutorial Complete!</h2>
+            <p>Final Progress Score: <span id="finalScore">0</span></p>
+            <p class="completion-message">Great job completing the tutorial!</p>
+            <button id="restartBtn2" class="btn">Try Again</button>
         </div>
     </div>
 
